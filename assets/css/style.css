@@ -379,7 +379,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: linear-gradient(130deg, #000 15.59%, #3B1616 86.33%);
 }
 
@@ -389,7 +389,7 @@ h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -398,7 +398,7 @@ h6 {
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #hero .btn-get-started {
@@ -559,6 +559,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
+  height: 10vh;
   padding: 12px 0;
   text-align: center;
 }
