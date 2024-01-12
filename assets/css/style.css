@@ -891,6 +891,17 @@ section {
   display: none;
 }
 
+.courses ul li {
+  display: flex;
+  align-items: center;
+}
+
+.courses ul i {
+  color: var(--tertiary);
+  font-size: 24px;
+  margin-right: 0.5rem;
+}
+
 .courses .icon {
   font-size: 20px;
 }
