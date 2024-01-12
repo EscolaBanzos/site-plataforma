@@ -36,7 +36,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: var(--tertiary);
 }
 
 #preloader:before {
@@ -44,7 +44,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid var(--tertiary);
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -324,7 +324,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .navbar-mobile a:hover,
@@ -336,7 +336,7 @@ h6 {
 .navbar-mobile .online-school,
 .navbar-mobile .online-school:focus {
   margin: 15px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .navbar-mobile .dropdown ul {
@@ -511,7 +511,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: var(--bg-primary);
 }
 
 .section-title {
@@ -526,7 +526,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: var(--primary);
 }
 
 .section-title h2::before {
@@ -647,7 +647,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .why-us .content h4 {
@@ -771,7 +771,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: var(--tertiary);
   font-family: "Poppins", sans-serif;
 }
 
@@ -808,7 +808,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .skills .progress .skill .val {
@@ -1212,9 +1212,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# Teachers
 --------------------------------------------------------------*/
-.team .member {
+.teacher .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -1224,32 +1224,32 @@ section {
   height: 100%;
 }
 
-.team .member .pic {
+.teacher .member .pic {
   overflow: hidden;
   width: 180px;
   border-radius: 50%;
 }
 
-.team .member .pic img {
+.teacher .member .pic img {
   transition: ease-in-out 0.3s;
 }
 
-.team .member:hover {
+.teacher .member:hover {
   transform: translateY(-10px);
 }
 
-.team .member .member-info {
+.teacher .member .member-info {
   padding-left: 30px;
 }
 
-.team .member h4 {
+.teacher .member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
-.team .member span {
+.teacher .member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -1257,7 +1257,7 @@ section {
   font-weight: 500;
 }
 
-.team .member span::after {
+.teacher .member span::after {
   content: "";
   position: absolute;
   display: block;
@@ -1268,19 +1268,19 @@ section {
   left: 0;
 }
 
-.team .member p {
+.teacher .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
-.team .member .social {
+.teacher .member .social {
   margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.team .member .social a {
+.teacher .member .social a {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -1291,21 +1291,21 @@ section {
   background: #eff2f8;
 }
 
-.team .member .social a i {
-  color: #37517e;
+.teacher .member .social a i {
+  color: var(--tertiary);
   font-size: 16px;
   margin: 0 2px;
 }
 
-.team .member .social a:hover {
+.teacher .member .social a:hover {
   background: var(--primary);
 }
 
-.team .member .social a:hover i {
+.teacher .member .social a:hover i {
   color: #fff;
 }
 
-.team .member .social a + a {
+.teacher .member .social a + a {
   margin-left: 8px;
 }
 
@@ -1329,12 +1329,12 @@ section {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: #37517e;
+  color: var(--tertiary);
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
@@ -1496,7 +1496,7 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: var(--tertiary);
   transition: 0.3s;
 }
 
@@ -1549,7 +1549,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .contact .info p {
@@ -1727,7 +1727,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 .breadcrumbs ol {
@@ -1755,7 +1755,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #000;
 }
 
 #footer .footer-newsletter {
@@ -1772,7 +1772,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 #footer .footer-newsletter form {
@@ -1827,7 +1827,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: var(--tertiary);
 }
 
 #footer .footer-top .footer-contact p {
@@ -1841,7 +1841,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: var(--tertiary);
   position: relative;
   padding-bottom: 12px;
 }
