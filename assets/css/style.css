@@ -561,29 +561,36 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
+# Detail Hero
 --------------------------------------------------------------*/
-.clients {
+.detail-hero {
   height: 10vh;
   padding: 12px 0;
   text-align: center;
+  background-image: url(../images/notes-texture.png);
+  background-repeat: repeat;
 }
 
-.clients img {
+.detail-hero .icone-musical {
   max-width: 45%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
+  font-size: 50px;
+  cursor: pointer;
+  color: var(--tertiary);
 }
 
-.clients img:hover {
+.detail-hero .icone-musical:hover {
   filter: none;
   transform: scale(1.1);
 }
 
+.detail-hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 @media (max-width: 768px) {
-  .clients img {
+  .detail-hero .icone-musical {
     max-width: 40%;
   }
 }
