@@ -178,8 +178,8 @@ h6 {
   color: var(--tertiary);
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
+.navbar .online-school,
+.navbar .online-school:focus {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
@@ -189,8 +189,8 @@ h6 {
   font-weight: 600;
 }
 
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
+.navbar .online-school:hover,
+.navbar .online-school:focus:hover {
   color: #fff;
   background: #31a9e1;
 }
@@ -333,8 +333,8 @@ h6 {
   color: var(--primary);
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
+.navbar-mobile .online-school,
+.navbar-mobile .online-school:focus {
   margin: 15px;
   color: #37517e;
 }
@@ -380,7 +380,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: linear-gradient(130deg, #000 15.59%, #3B1616 86.33%);
 }
 
 #hero .container {
