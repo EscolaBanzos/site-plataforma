@@ -87,7 +87,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: var(--tertiary);;
   color: #fff;
 }
 
@@ -192,7 +192,8 @@ h6 {
 .navbar .online-school:hover,
 .navbar .online-school:focus:hover {
   color: #fff;
-  background: #31a9e1;
+  background: var(--tertiary);
+  border-color: var(--tertiary);
 }
 
 .navbar .dropdown ul {
@@ -416,7 +417,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: var(--tertiary);
 }
 
 #hero .btn-watch-video {
@@ -847,7 +848,7 @@ section {
 
 .contact .contact-btn:hover {
   background: var(--whatsapp-hover);
-  border: 2px solid #47b2e4;
+  border: 2px solid var(--tertiary);
 }
 
 .contact .contact-btn .icon-wpp {
@@ -1178,6 +1179,59 @@ section {
   background: #000;
 }
 
+#footer .footer-newsletter {
+  padding: 50px 0;
+  background: #f3f5fa;
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--tertiary);
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: var(--primary);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: var(--tertiary);
+}
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
@@ -1268,7 +1322,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: var(--tertiary);
   color: #fff;
   text-decoration: none;
 }
