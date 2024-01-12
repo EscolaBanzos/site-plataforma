@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #73c5eb;
+  color: var(--tertiary);
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ h6 {
   background: var(--primary);
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   transition: all 0.4s;
 }
 
@@ -182,7 +182,7 @@ h6 {
 .navbar .online-school:focus {
   padding: 8px 20px;
   margin-left: 30px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   color: #fff;
   font-size: 14px;
   border: 2px solid var(--primary);
@@ -408,7 +408,7 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
@@ -829,48 +829,165 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Courses
 --------------------------------------------------------------*/
-.services .icon-box {
+.courses .icon-box {
+  padding: 20px;
+  width: 100%;
+  height: max-content;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
+  border-radius: 1rem;
 }
 
-.services .icon-box .icon {
-  margin-bottom: 10px;
+.courses .accordion-list ul {
+  padding: 0;
+  list-style: none;
 }
 
-.services .icon-box .icon i {
-  color: #47b2e4;
-  font-size: 36px;
-  transition: 0.3s;
+.courses .accordion-list li {
+  padding: 5px;
+  background: #fff;
+  border-radius: 4px;
 }
 
-.services .icon-box h4 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 24px;
+.courses .accordion-list .toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  cursor: pointer;
 }
 
-.services .icon-box h4 a {
-  color: #37517e;
-  transition: ease-in-out 0.3s;
+.courses .accordion-list .toggle .text {
+  color: var(--primary);
+  padding-right: 20px;
 }
 
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+.courses .accordion-list .toggle .text:hover {
+  color: var(--tertiary);
 }
 
-.services .icon-box:hover {
-  transform: translateY(-10px);
+.courses .accordion-list .icon-show {
+  display: none;
 }
 
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
+.courses .accordion-list .toggle.collapsed {
+  color: var(--primary);
+}
+
+.courses .accordion-list .toggle.collapsed:hover {
+  color: var(--tertiary);
+}
+
+.courses .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.courses .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+.courses .icon {
+  font-size: 20px;
+}
+
+.courses .icon-instrument {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+  &.instrument-01 {
+    background-image: url(../images/icons/Violão.png);
+  }
+
+  &.instrument-02 {
+    background-image: url(../images/icons/Guitarra.png);
+  }
+
+  &.instrument-03 {
+    background-image: url(../images/icons/Contrabaixo.png);
+  }
+
+  &.instrument-04 {
+    background-image: url(../images/icons/Cavaquinho.png);
+  }
+  &.instrument-05 {
+    background-image: url(../images/icons/Ukulele.png);
+  }
+  &.instrument-06 {
+    background-image: url(../images/icons/Viola-Caipira.png);
+  }
+  &.instrument-07 {
+    background-image: url(../images/icons/Flauta.png);
+  }
+  &.instrument-08 {
+    background-image: url(../images/icons/Flauta-Transversal.png);
+  }
+  &.instrument-09 {
+    background-image: url(../images/icons/Violino.png);
+  }
+  &.instrument-10 {
+    background-image: url(../images/icons/Piano.png);
+  }
+  &.instrument-11 {
+    background-image: url(../images/icons/Teclado.png);
+  }
+  &.instrument-12 {
+    background-image: url(../images/icons/Sanfona.png);
+  }
+  &.instrument-13 {
+    background-image: url(../images/icons/Cajon.png);
+  }
+  &.instrument-14 {
+    background-image: url(../images/icons/Bateria.png);
+  }
+  &.instrument-15 {
+    background-image: url(../images/icons/Microfone.png);
+  }
+  &.instrument-16 {
+    background-image: url(../images/icons/Saxofone.png);
+  }
+  &.instrument-17 {
+    background-image: url(../images/icons/Musicalização-Infantil.png);
+  }
+  &.instrument-18 {
+    background-image: url(../images/icons/Teoria-Pratica.png);
+  }
+}
+
+@media (max-width: 1024px) {
+  .courses .content,
+  .courses .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .courses .img {
+    min-height: 400px;
+  }
+
+  .courses .content {
+    padding-top: 30px;
+  }
+
+  .courses .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .courses .img {
+    min-height: 200px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -899,7 +1016,7 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -943,13 +1060,13 @@ section {
   color: #444444;
   transition: all 0.3s;
   padding: 8px 20px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   font-family: "Poppins", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
+  background: var(--tertiary);
   color: #fff;
 }
 
@@ -1157,7 +1274,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   width: 32px;
   height: 32px;
   background: #eff2f8;
@@ -1258,7 +1375,7 @@ section {
 .pricing .buy-btn {
   display: inline-block;
   padding: 12px 35px;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   color: var(--primary);
   transition: none;
   font-size: 16px;
@@ -1412,7 +1529,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1563,7 +1680,7 @@ section {
   padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 0.5rem;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1652,7 +1769,7 @@ section {
   background: #fff;
   padding: 6px 10px;
   position: relative;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
 }
@@ -1675,7 +1792,7 @@ section {
   background: var(--primary);
   color: #fff;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
