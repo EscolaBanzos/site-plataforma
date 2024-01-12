@@ -517,6 +517,8 @@ section {
 
 .section-bg {
   background-color: var(--bg-primary);
+  background-image: url(../images/notes-texture.png);
+  background-repeat: repeat;
 }
 
 .section-title {
