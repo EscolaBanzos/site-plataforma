@@ -388,6 +388,13 @@ h6 {
   background: linear-gradient(130deg, #000 15.59%, #3b1616 86.33%);
 }
 
+#hero .mark {
+  background-image: url(../images/notes.png);
+  background-color: transparent;
+  background-size: cover;
+  background-position-y: -70px;
+}
+
 #hero .container {
   padding-top: 72px;
 }
@@ -604,7 +611,7 @@ section {
   height: 100%;
   background-image: url(../images/school/school-0.jpg);
   background-size: cover;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .about .content h3 {
