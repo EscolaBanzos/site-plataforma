@@ -1,12 +1,14 @@
 :root {
-  --primary: #b81728;
-  --secondary: #152533;
-  --tertiary: #ff7d0a;
+
+  --primary: #F23535;
+  --secondary: #590209;
+  --tertiary: #FF7D0A;
   --tertiary-hover: #fb9840;
-  --bg-primary: #ffebd3;
+  --bg-card: #590209;
+  --bg-primary: #220d0d;
   --bg-primary-transparent: #753c42;
-  --bg-secondary: #330d0d;
-  --bg-secondary-transparent: #330d0dcc;
+  --bg-secondary: #0D0D0D;
+  --bg-secondary-transparent: #0D0D0D;
   --bg-secondary-transparent-grad: #770505cc;
   --whatsapp: #55d935;
   --whatsapp-hover: #4bb430;

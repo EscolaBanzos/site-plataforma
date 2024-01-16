@@ -384,7 +384,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(130deg, #000 15.59%, #3b1616 86.33%);
 }
 
@@ -524,7 +524,7 @@ section {
 
 .section-bg {
   background-color: var(--bg-primary);
-  background-image: url(../images/notes-texture.png);
+  background-image: url(../images/nnotes-texture.png);
   background-repeat: repeat;
 }
 
@@ -567,17 +567,17 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  color: var(--tertiary);
 }
 
 /*--------------------------------------------------------------
 # Detail Hero
 --------------------------------------------------------------*/
 .detail-hero {
-  height: 10vh;
-  padding: 12px 0;
-  text-align: center;
-  background-image: url(../images/notes-texture.png);
-  background-repeat: repeat;
+  bottom: 0px;
+  position: absolute;
+  width: inherit;
+  z-index: 1;
 }
 
 .detail-hero .icone-musical {
@@ -601,6 +601,58 @@ section {
 @media (max-width: 768px) {
   .detail-hero .icone-musical {
     max-width: 40%;
+  }
+}
+
+.hero-waves {
+  bottom: 0;
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 100px;
+}
+
+.wave1 use {
+  animation: move-forever1 10s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  animation: move-forever2 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  animation: move-forever3 6s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
   }
 }
 
@@ -668,7 +720,7 @@ section {
   height: max-content;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.4s;
-  background: #fff;
+  background: linear-gradient(180deg, #a22626 -9.88%, #410106 89.65%);
   border-radius: 1rem;
 }
 
@@ -679,7 +731,7 @@ section {
 
 .courses .accordion-list li {
   padding: 5px;
-  background: #fff;
+  color: #fff;
   border-radius: 4px;
 }
 
@@ -694,7 +746,7 @@ section {
 }
 
 .courses .accordion-list .toggle .text {
-  color: var(--primary);
+  color: var(--tertiary);
   padding-right: 20px;
 }
 
@@ -707,7 +759,7 @@ section {
 }
 
 .courses .accordion-list .toggle.collapsed {
-  color: var(--primary);
+  color: var(--tertiary);
 }
 
 .courses .accordion-list .toggle.collapsed:hover {
@@ -995,7 +1047,8 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(180deg, #a22626 -9.88%, #410106 89.65%);
   transition: 0.5s;
   height: 100%;
 }
@@ -1126,7 +1179,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: var(--primary);
+  color: white;
   font-size: 26px;
 }
 
@@ -1147,7 +1200,8 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: var(--bg-primary);
+  background: linear-gradient(173deg, #ff7d0a -30.7%, #f23535 113.5%);
+  color: white;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1221,62 +1275,9 @@ section {
   background: #000;
 }
 
-#footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f3f5fa;
-  text-align: center;
-  font-size: 15px;
-  color: #444444;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: var(--tertiary);
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 0.5rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: var(--primary);
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0.5rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: var(--tertiary);
-}
-
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--bg-secondary);
 }
 
 #footer .footer-top .footer-contact {
@@ -1285,7 +1286,7 @@ section {
 
 #footer .school-image {
   border-radius: 0.5rem;
-  box-shadow: 10px 10px 30px 3px rgba(255, 255, 255, 0.30);
+  box-shadow: 10px 10px 30px 3px rgba(255, 255, 255, 0.3);
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -1303,7 +1304,11 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  color: #858585;
+}
+
+#footer .footer-top .footer-links p {
+  color: #858585;
 }
 
 #footer .footer-top h4 {
