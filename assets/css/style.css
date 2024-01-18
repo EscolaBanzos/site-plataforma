@@ -133,6 +133,12 @@ h6 {
   max-height: 70px;
 }
 
+@media (max-width: 991px) {
+  #header .logo img {
+    max-width: 50px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -300,7 +306,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: rgb(90 40 40 / 90%);
   transition: 0.3s;
   z-index: 999;
 }
@@ -320,7 +326,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background: linear-gradient(130deg, #000 15.59%, #3b1616 86.33%);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -462,6 +468,10 @@ h6 {
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#hero .hero-img img {
+  margin: auto;
 }
 
 @media (max-width: 991px) {
@@ -618,8 +628,9 @@ section {
 .hero-waves {
   bottom: 0;
   position: absolute;
-  width: -webkit-fill-available;
+  width: 100%;
   height: 100px;
+  left: 0;
 }
 
 .wave1 use {
@@ -1300,6 +1311,7 @@ section {
 }
 
 #footer .school-image {
+  max-width: 100%;
   border-radius: 0.5rem;
   box-shadow: 10px 10px 30px 3px rgba(255, 255, 255, 0.3);
 }
