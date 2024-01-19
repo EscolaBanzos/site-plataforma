@@ -956,6 +956,10 @@ section {
   text-wrap: nowrap;
 }
 
+#footer .area-qrcode img {
+  width: 130px;
+}
+
 @media (max-width: 1024px) {
   .contact {
     background-attachment: scroll;
