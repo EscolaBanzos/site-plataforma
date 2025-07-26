@@ -101,6 +101,30 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Certificate Section
+--------------------------------------------------------------*/
+#certificate .certificate-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/certificado.jpg);
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+#certificate .color-certificate {
+  color: var(--primary);
+}
+
+#certificate .section-title-certificate{
+  text-align: left;
+  padding-bottom: 21em;
+}
+
+#certificate .text-certificate {
+  font-size: 18px;
+
+}
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
