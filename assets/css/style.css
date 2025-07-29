@@ -26,7 +26,8 @@ h6 {
 }
 
 .box-shadow {
-  box-shadow: rgba(240, 46, 46, 0.2) 05px 05px, rgba(240, 46, 46, 0.2) 10px 10px, rgba(240, 46, 46, 0.1) 15px 15px, rgba(240, 46, 46, 0.05) 20px 20px;
+  box-shadow: rgba(240, 46, 46, 0.2) 05px 05px, rgba(240, 46, 46, 0.2) 10px 10px,
+    rgba(240, 46, 46, 0.1) 15px 15px, rgba(240, 46, 46, 0.05) 20px 20px;
 }
 
 /*--------------------------------------------------------------
@@ -115,14 +116,13 @@ h6 {
   color: var(--primary);
 }
 
-#certificate .section-title-certificate{
+#certificate .section-title-certificate {
   text-align: left;
   padding-bottom: 21em;
 }
 
 #certificate .text-certificate {
   font-size: 18px;
-
 }
 /*--------------------------------------------------------------
 # Header
@@ -844,64 +844,63 @@ section {
   align-items: center;
   justify-content: center;
   background-size: cover;
+}
+.courses .icon-instrument.instrument-01 {
+  background-image: url(../images/icons/Violão.png);
+}
 
-  &.instrument-01 {
-    background-image: url(../images/icons/Violão.png);
-  }
+.courses .icon-instrument.instrument-02 {
+  background-image: url(../images/icons/Guitarra.png);
+}
 
-  &.instrument-02 {
-    background-image: url(../images/icons/Guitarra.png);
-  }
+.courses .icon-instrument.instrument-03 {
+  background-image: url(../images/icons/Contrabaixo.png);
+}
 
-  &.instrument-03 {
-    background-image: url(../images/icons/Contrabaixo.png);
-  }
-
-  &.instrument-04 {
-    background-image: url(../images/icons/Cavaquinho.png);
-  }
-  &.instrument-05 {
-    background-image: url(../images/icons/Ukulele.png);
-  }
-  &.instrument-06 {
-    background-image: url(../images/icons/Viola-Caipira.png);
-  }
-  &.instrument-07 {
-    background-image: url(../images/icons/Flauta.png);
-  }
-  &.instrument-08 {
-    background-image: url(../images/icons/Flauta-Transversal.png);
-  }
-  &.instrument-09 {
-    background-image: url(../images/icons/Violino.png);
-  }
-  &.instrument-10 {
-    background-image: url(../images/icons/Piano.png);
-  }
-  &.instrument-11 {
-    background-image: url(../images/icons/Teclado.png);
-  }
-  &.instrument-12 {
-    background-image: url(../images/icons/Sanfona.png);
-  }
-  &.instrument-13 {
-    background-image: url(../images/icons/Cajon.png);
-  }
-  &.instrument-14 {
-    background-image: url(../images/icons/Bateria.png);
-  }
-  &.instrument-15 {
-    background-image: url(../images/icons/Microfone.png);
-  }
-  &.instrument-16 {
-    background-image: url(../images/icons/Saxofone.png);
-  }
-  &.instrument-17 {
-    background-image: url(../images/icons/Musicalização-Infantil.png);
-  }
-  &.instrument-18 {
-    background-image: url(../images/icons/Teoria-Pratica.png);
-  }
+.courses .icon-instrument.instrument-04 {
+  background-image: url(../images/icons/Cavaquinho.png);
+}
+.courses .icon-instrument.instrument-05 {
+  background-image: url(../images/icons/Ukulele.png);
+}
+.courses .icon-instrument.instrument-06 {
+  background-image: url(../images/icons/Viola-Caipira.png);
+}
+.courses .icon-instrument.instrument-07 {
+  background-image: url(../images/icons/Flauta.png);
+}
+.courses .icon-instrument.instrument-08 {
+  background-image: url(../images/icons/Flauta-Transversal.png);
+}
+.courses .icon-instrument.instrument-09 {
+  background-image: url(../images/icons/Violino.png);
+}
+.courses .icon-instrument.instrument-10 {
+  background-image: url(../images/icons/Piano.png);
+}
+.courses .icon-instrument.instrument-11 {
+  background-image: url(../images/icons/Teclado.png);
+}
+.courses .icon-instrument.instrument-12 {
+  background-image: url(../images/icons/Sanfona.png);
+}
+.courses .icon-instrument.instrument-13 {
+  background-image: url(../images/icons/Cajon.png);
+}
+.courses .icon-instrument.instrument-14 {
+  background-image: url(../images/icons/Bateria.png);
+}
+.courses .icon-instrument.instrument-15 {
+  background-image: url(../images/icons/Microfone.png);
+}
+.courses .icon-instrument.instrument-16 {
+  background-image: url(../images/icons/Saxofone.png);
+}
+.courses .icon-instrument.instrument-17 {
+  background-image: url(../images/icons/Musicalização-Infantil.png);
+}
+.courses .icon-instrument.instrument-18 {
+  background-image: url(../images/icons/Teoria-Pratica.png);
 }
 
 @media (max-width: 1024px) {
@@ -936,7 +935,12 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background: linear-gradient(var(--bg-secondary-transparent), var(--bg-secondary-transparent-grad)), url("../images/gallery/school-4.jpg") fixed center center;
+  background-color: red;
+  background: linear-gradient(
+      var(--bg-secondary-transparent),
+      var(--bg-secondary-transparent-grad)
+    ),
+    url("../images/gallery/school-4.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
