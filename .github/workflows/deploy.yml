@@ -23,14 +23,15 @@ jobs:
 
       - name: Bump version (local update)
         run: npm run bump-version
-    
-      - name: Garantir que a pasta assets/js exista
-        run: |
-          mkdir -p assets/js
-          touch assets/js/.gitkeep
 
       - name: Build project
         run: npm run build
+
+      - name: Garantir que a pasta assets/js exista com permissão 0755
+        run: |
+          mkdir -p assets/js
+          chmod 0755 assets/js
+          touch assets/js/.gitkeep
 
       - name: Verificar conteúdo do dist
         run: ls -R ./dist
