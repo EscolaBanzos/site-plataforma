@@ -3,7 +3,7 @@ name: Deploy to HostGator via FTP
 on:
   push:
     branches:
-      - main   # altere para sua branch de deploy
+      - main # altere para sua branch de deploy
 
 jobs:
   deploy:
@@ -30,5 +30,5 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist        # pasta onde está seu build
-          server-dir: /public_html # pasta raiz no HostGator (ajuste se for diferente)
+          local-dir: ./dist # pasta onde está seu build
+          server-dir: /public # pasta raiz no HostGator (ajuste se for diferente)
