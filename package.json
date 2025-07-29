@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "build": "node minify.js"
+    "bump-version": "node bump-version.js",
+    "generate-version": "node generate-version.js",
+    "build-minify": "node minify.js",
+    "build": "npm run bump-version && npm run build-minify &&  npm run generate-version"
   },
   "devDependencies": {
     "clean-css": "^5.3.3",
@@ -9,5 +12,6 @@
   },
   "dependencies": {
     "fs-extra": "^11.3.0"
-  }
+  },
+  "version": "0.0.0"
 }

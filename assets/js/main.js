@@ -275,4 +275,6 @@
       mirror: false,
     });
   });
+
+  console.log('🖳 App version:', window.APP_VERSION);
 })();
