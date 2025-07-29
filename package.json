@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "node minify.js"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.19.3"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}
