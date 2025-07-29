@@ -25,7 +25,7 @@ jobs:
         run: npm run bump-version
 
       - name: Build project
-        run: npm run build-minify
+        run: npm run build
 
       - name: Configurar Git com token para push
         run: |
