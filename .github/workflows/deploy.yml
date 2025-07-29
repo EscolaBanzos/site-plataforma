@@ -54,3 +54,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/ # pasta onde está seu build
           server-dir: ./ # pasta raiz configurada no HostGator
+          delete: true # delete arquivos no servidor que não existem mais localmente
