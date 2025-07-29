@@ -42,6 +42,9 @@ jobs:
         run: |
           git pull --rebase origin main
           git push origin HEAD
+      
+      - name: Limpar cache de deploy FTP
+        run: rm -f .ftp-deploy-sync-state.json
 
       - name: Deploy via FTP to HostGator
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
