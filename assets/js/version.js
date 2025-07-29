@@ -1,0 +1,1 @@
+// Vai ser gerado no npm run build
