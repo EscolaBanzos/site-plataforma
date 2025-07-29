@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/ # pasta onde está seu build
-          server-dir: /public # pasta raiz no HostGator (ajuste se for diferente)
+          server-dir: /public/ # pasta raiz no HostGator (ajuste se for diferente)
