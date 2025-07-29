@@ -23,6 +23,11 @@ jobs:
 
       - name: Bump version (local update)
         run: npm run bump-version
+    
+      - name: Garantir que a pasta assets/js exista
+        run: |
+          mkdir -p assets/js
+          touch assets/js/.gitkeep
 
       - name: Build project
         run: npm run build
